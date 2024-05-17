@@ -346,7 +346,7 @@ router.patch("/update/:email", upload.single("images"), async (req, res) => {
     } else if (isUpdate == "True") {
       userToUpdate.password = oldPass;
     }
-    const paths = "http://localhost:5000/images/";
+    const paths = "https://tolet-server-mu.vercel.app/images/";
     // Update fields provided in the request body
     if (filename) userToUpdate.user_image = paths+filename;
 
