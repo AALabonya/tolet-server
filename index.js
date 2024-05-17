@@ -12,7 +12,7 @@ const aboutController =require("./controllers/about_controller")
 const footerController =require("./controllers/footer_controller")
 const reportController =require("./controllers/report_controller")
 // Middleware
-app.use(cors());
+// app.use(cors());
 app.use(express.json());
 app.use("/images", express.static("images"));
 require("dotenv").config();
